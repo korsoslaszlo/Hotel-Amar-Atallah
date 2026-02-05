@@ -15,6 +15,46 @@ header {
     color: aliceblue;
     padding-left: 50px;
     box-sizing: border-box;
+    position: relative;
+    justify-content: space-between;
+}
+
+header img {
+    width: auto;
+    height: 70%;
+    padding-right: 100px;
+}
+
+nav {
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 3px solid #ffd700
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;             
+    justify-content: center;   
+    flex-wrap: wrap;           
+    gap: 30px;                 
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 header h1 {
