@@ -1,73 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: url(../../images/arab_hatter.png);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.6)),url(../../images/hotel_upscaled.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    color: aliceblue;
-    padding-left: 50px;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: space-between;
-}
-
-header img {
-    width: auto;
-    height: 70%;
-    padding-right: 100px;
-}
-
 nav {
     background-color: rgb(24, 24, 24);
+    
     width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 3px solid #ffd700
+    padding: 15px;
+    border-bottom: 3px solid #ffd700;
+    position: relative;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;             
-    justify-content: center;   
-    flex-wrap: wrap;           
-    gap: 30px;                 
-}
-
-nav a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ffd700;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-header h1 {
-    margin: 0px;
-    text-shadow: 2px 2px 4px black;
-}
-
-main {
-margin: 20px;
-background-color: aqua;
-}
-
-/* hamburger menu */
 
 #menu-toggle {
     display: none;
@@ -80,12 +27,81 @@ background-color: aqua;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin: 0 auto;
 }
 
 .hamburger span {
-    display: block;
     height: 4px;
     background: white;
     border-radius: 2px;
+}
+
+.menu {
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+#menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+    }
+}
+
+header {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6)), url(../../images/hotel_upscaled.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: aliceblue;
+    padding-left: 50px;
+    position: relative;
+    justify-content: space-between;
+}
+
+header img {
+    height: 70%;
+    padding-right: 100px;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 4px black;
+}
+
+main {
+    margin: 20px;
+    background-color: aqua;
 }
