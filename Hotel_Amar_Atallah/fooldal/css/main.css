@@ -203,3 +203,75 @@ main {
         padding: 60px;
     }
 }
+
+footer {
+    background-color: rgb(24, 24, 24);
+    color: aliceblue;
+    padding-top: 50px;
+    border-top: 3px solid #ffd700;
+    width: 100%;
+}
+
+.footer-tartalom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-doboz {
+    width: 80%;
+}
+
+.footer-doboz h3 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.footer-doboz p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-doboz ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-doboz a {
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.footer-doboz a:hover {
+    color: #ffd700;
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+@media (min-width: 800px) {
+    .footer-tartalom {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-doboz {
+        width: 30%;
+    }
+}
