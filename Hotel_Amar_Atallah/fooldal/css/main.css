@@ -276,3 +276,14 @@ footer {
         width: 30%;
     }
 }
+
+a {
+    text-decoration: none;
+    color: #b8860b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffd700;
+}
