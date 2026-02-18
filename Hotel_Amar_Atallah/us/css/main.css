@@ -151,3 +151,8 @@ footer {
         width: 30%;
     }
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+}
